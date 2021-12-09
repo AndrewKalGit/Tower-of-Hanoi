@@ -19,6 +19,12 @@ ul {
 	justify-content: center;
 }
 
+.allPoles {
+	border: 1px solid black;
+	height: 200px;
+	width: 12.5px;
+}
+
 li {
 	list-style: none;
 }
