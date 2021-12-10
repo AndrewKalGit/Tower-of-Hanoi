@@ -7,7 +7,7 @@ ul {
 	position: relative;
 	margin-top: 10%;
 	border-bottom: 2px solid black;
-	height: 500px;
+	height: 150px;
 	width: 200px;
 	justify-content: flex-start;
 	align-items: center;
@@ -19,12 +19,25 @@ ul {
 	justify-content: center;
 }
 
-.allPoles {
+/* .allPoles {
 	border: 1px solid black;
 	height: 200px;
 	width: 12.5px;
-}
+} */
 
 li {
 	list-style: none;
+}
+
+#p1 {
+	border-right: 2.5px solid black;
+	border-left: 2.5px solid black;
+}
+
+#p2 {
+	border-right: 2.5px solid black;
+}
+
+#p3 {
+	border-right: 2.5px solid black;
 }
