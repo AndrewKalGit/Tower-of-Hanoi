@@ -1,8 +1,6 @@
 ### Tower of Hanoi, Stack the towers smallest (top) to largest (bottom) in last column!
 
 ![Tower of Hanoi](./Tower6.png)
-![Tower of Hanoi](./Tower5.png)
-![Tower of Hanoi: Instructions](./instructions.png)
 
 ### Technologies used
 
