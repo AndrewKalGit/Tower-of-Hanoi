@@ -21,4 +21,4 @@ Math and puzzle lovers, If you want a challenge and learn to solve puzzles visua
 ### Description
 
 Front end designed game:
-I have still yet to add full functionality
+Basic Functionality. 

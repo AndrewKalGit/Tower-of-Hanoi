@@ -81,7 +81,7 @@ function moveDiscOrigin(pole, js) {
 		selectDisc = null;
 		DISC_ARR[selectedPole.id[1] - 1].push(js);
 	}
-	checkWin();
+	setTimeout(checkWin, 300);
 
 	// let makeshiftIdentifierDiscs = parseInt(selectDisc.id[1]) + 1;
 	// let uniqueDiscus = parseInt(pole.id[1] - 1);
