@@ -51,3 +51,15 @@
 - Lack of planning and making pseudo code.
 - Pacing the work out into blocks, rather than binging the work.
 - DOM Manipulation regarding the game play and win condition.
+
+### Bronze
+
+- Adding in a night mode
+### Silver
+
+- Timer 
+### Gold
+
+- Adding in win condition with multiple discs
+- Adding in logic with multiple discs, and reseting game board when adding discs 
+- Beat the clock version
