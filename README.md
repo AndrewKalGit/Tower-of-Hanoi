@@ -36,4 +36,18 @@
 ![Tower of Hanoi: Game in progress](./Tower3.png)
 ![Tower of Hanoi: Game in progress](./Tower2.png)
 
-### Description
+### Improvements and Road Blocks
+
+### Improvements
+
+- Get my multiple discs to be playable without bugs and glitches
+- Have my game reset with every add of a discs
+- I want to make my code less complex and with more comments
+- Pseudo code a lot more and spend way more time planning
+- Organize things into smaller and more functions than couple big ones
+
+### Road Blocks
+
+- Lack of planning and making pseudo code.
+- Pacing the work out into blocks, rather than binging the work.
+- DOM Manipulation regarding the game play and win condition. 
