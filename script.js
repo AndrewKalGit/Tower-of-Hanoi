@@ -44,15 +44,15 @@ let funcCounter = 0;
 let winCounter;
 let mvpCounter = 2;
 function createDisc() {
-	if (funcCounter < 8) {
+	if (funcCounter < 5) {
 		const disc = document.createElement('li');
-		const width = DISC_ARR[0].length * 20;
+		const width = DISC_ARR[0].length * 30;
 		disc.setAttribute('id', `d${mvpCounter}`);
 		disc.classList.add(`discs${funcCounter}`);
 		const COLOR1 = Math.floor(Math.random() * (255 - 25) + 25);
 		const COLOR2 = Math.floor(Math.random() * (255 - 25) + 25);
 		const COLOR3 = Math.floor(Math.random() * (255 - 25) + 25);
-		disc.style.width = `${150 - width}px`;
+		disc.style.width = `${130 - width}px`;
 		disc.style.height = `${20}px`;
 		disc.style.border = `${1}px, solid, rgb(${COLOR1},${COLOR2},${COLOR3})`;
 		disc.style.backgroundColor = `rgb(${COLOR1},${COLOR2},${COLOR3})`;
@@ -81,37 +81,7 @@ function moveDiscOrigin(pole, js) {
 		selectDisc = null;
 		DISC_ARR[selectedPole.id[1] - 1].push(js);
 	}
-	setTimeout(checkWin, 300);
-
-	// let makeshiftIdentifierDiscs = parseInt(selectDisc.id[1]) + 1;
-	// let uniqueDiscus = parseInt(pole.id[1] - 1);
-
-	// if (makeshiftIdentifierDiscs === 1) {
-	// 	pole.append(selectDisc);
-	// 	selectDisc = null;
-	// }
-	// if (
-	// 	WIN_CONDITION[positionBefore].length >= WIN_CONDITION[uniqueDiscus].length
-	// ) {
-	// 	WIN_CONDITION[uniqueDiscus].push(selectDisc);
-	// 	positionAfter = uniqueDiscus;
-	// 	if (positionBefore !== uniqueDiscus) {
-	// 		WIN_CONDITION[positionBefore].pop();
-	// 		positionBefore = uniqueDiscus;
-	// 	}
-	// }
-	// if (makeshiftIdentifierDiscs === 2) {
-	// 	positionAfter = uniqueDiscus;
-	// 	if (positionAfter === uniqueDiscus){
-	// 		WIN_CONDITION[uniqueDiscus].push(selectDisc);
-	// 	}	if (positionBefore > uniqueDiscus) {
-	// 		WIN_CONDITION[positionBefore].pop();
-	// 		positionBefore = uniqueDiscus;
-	// 	}
-	// }
-	// if (makeshiftIdentifierDiscs > WIN_CONDITION[positionBefore] && selectDisc !== null) {
-	// 	pole.append(selectDisc);
-	// }
+	setTimeout(checkWin, 100);
 }
 
 function checkWin() {

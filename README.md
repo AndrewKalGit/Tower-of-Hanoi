@@ -1,6 +1,6 @@
 ### Tower of Hanoi
 
-![Tower of Hanoi](./tower.png)
+![Tower of Hanoi](./towerPic1.png)
 
 ### Technologies used
 
@@ -16,7 +16,7 @@ Math and puzzle lovers, If you want a challenge and learn to solve puzzles visua
 
 ### Wireframes
 
-![Tower of Hanoi](./tower.png)
+![Tower of Hanoi](./towerPic1.png)
 
 ### Description
 
