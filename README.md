@@ -50,4 +50,4 @@
 
 - Lack of planning and making pseudo code.
 - Pacing the work out into blocks, rather than binging the work.
-- DOM Manipulation regarding the game play and win condition. 
+- DOM Manipulation regarding the game play and win condition.
