@@ -1,24 +1,41 @@
-### Tower of Hanoi
+### Tower of Hanoi, Stack the towers smallest (top) to largest (bottom) in last column!
 
-![Tower of Hanoi](./towerPic1.png)
+![Tower of Hanoi](./Tower6.png)
+![Tower of Hanoi](./Tower5.png)
+![Tower of Hanoi: Instructions](./instructions.png)
 
 ### Technologies used
 
-HTML, CSS, JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ### Installation Instructions
 
-Download the code by clicking the green code button and click download zip
+- For and clone the repository
+- cd to the name of the repo: Tower-of-Hanoi
+- Open in your preferred text editor
+- Open index.html in your browser
 
-### User Stories
+### Who are the users, what do they want and why?
 
-Math and puzzle lovers, If you want a challenge and learn to solve puzzles visual.
+## User Stories:
+
+- As a player, I want to learn about the game so I can increase my puzzle solving skills
+- As a player, I want to see how well I solve puzzles
+- As a player, I want a challenging thought provoking puzzle game
+- As a player, I want to be able to get in a quick mind challenge
+
+## Who are the users:
+
+- Anyone who loves playing with advanced puzzles
+- Has a desire for a challenge that involves thinking
+- Has either computer, tablet, or smart phone
 
 ### Wireframes
 
-![Tower of Hanoi](./towerPic1.png)
+![Tower of Hanoi: Game in progress](./TowerPower.png)
+![Tower of Hanoi: Game in progress](./Tower3.png)
+![Tower of Hanoi: Game in progress](./Tower2.png)
 
 ### Description
-
-Front end designed game:
-Basic Functionality. 
