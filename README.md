@@ -58,6 +58,7 @@
 ### Silver
 
 - Timer 
+- Step Counter 
 ### Gold
 
 - Adding in win condition with multiple discs

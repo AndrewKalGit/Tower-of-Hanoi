@@ -60,6 +60,15 @@ button {
 	border-radius: 10px;
 }
 
+#reset {
+	background-color: lightskyblue;
+}
+
+#reset:hover {
+	color: lightskyblue;
+	background-color: aliceblue;
+}
+
 button:hover {
 	background-color: white;
 	color: tomato;
@@ -81,6 +90,6 @@ footer {
 
 @media only screen and (max-width: 500px) {
 	body {
-		width:95%;
+		width: 95%;
 	}
 }

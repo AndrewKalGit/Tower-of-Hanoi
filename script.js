@@ -3,6 +3,7 @@ const P3 = document.querySelector('#p3');
 const P2 = document.querySelector('#p2');
 const P1 = document.querySelector('#p1');
 const Poles = document.querySelector('.poles');
+const RESET = document.querySelector('#reset');
 
 const DISC_ARR = [[], [], []];
 
@@ -13,6 +14,8 @@ const emptyArray = [];
 let selectDisc = null;
 let selectedPole;
 let js;
+
+RESET.addEventListener('click', resetBoard);
 
 BUTTON.addEventListener('click', createDisc);
 Poles.addEventListener('click', function (event) {
@@ -87,5 +90,10 @@ function moveDiscOrigin(pole, js) {
 function checkWin() {
 	if (DISC_ARR[2].length === 3) {
 		alert('Completed!');
+		resetBoard();
 	}
+}
+
+function resetBoard() {
+	window.location = window.location;
 }
