@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Hanoi.png">
 </head>
-<body>
     <header>
         <h1><span class="Border">Tower of <span class="Hanoi"> Hanoi</span></span></h1>
     </header>
     <button type="button">Add Discs</button>
     <button type="button" id="reset">Reset Board</button>
+    <button id="HowToWin" type="button" onClick="document.getElementById('HowTo').scrollIntoView();">How to Play</button>
 <div class="poles">
     <ul class="pole" id="p1">
     </ul>
-    <ul class="pole" id='p2'>
+    <ul class="pole" id='p2'> 
     </ul>    
     <ul class="pole" id="p3">
     </ul>
@@ -25,7 +25,11 @@
 <script src="script.js"></script>
 <footer>
     <h3>Instructions:</h3>
-    <p>Get all 3 disc from smallest (top) to biggest (bottom), in the thrid column. In other words get the same starting position of discs to the last column.</p>
+    Get all 3 disc from smallest (top) to biggest (bottom), in the third column. In other words get the same starting position of discs to the third column.
+    <h4>Visual of win state:</h4>
+    <img id="win" src="win.png" alt="Discs at win state">
+    <h4 id="HowTo">How to play:</h4>
+    <p>Tap the discs to select them, then tap the column you want to move it to.</p>
     <h4>Rules:</h4>
     <p>1. You can't stack the bigger discs on smaller discs.</p>
     <p>2. You can stack the smaller discs on bigger ones.</p>

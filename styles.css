@@ -67,12 +67,23 @@ button {
 #reset:hover {
 	color: lightskyblue;
 	background-color: aliceblue;
+	transition: .5s;
+}
+
+#HowToWin {
+	background-color: rgb(172, 255, 47);
+}
+
+#HowToWin:hover {
+	color: greenyellow;
+	background: aliceblue;
+	transition: .5s;
 }
 
 button:hover {
-	background-color: white;
+	background-color: aliceblue;
 	color: tomato;
-	transition: 1s;
+	transition: .5s;
 }
 
 .Border {
@@ -91,5 +102,15 @@ footer {
 @media only screen and (max-width: 500px) {
 	body {
 		width: 95%;
+	}
+}
+
+#win {
+	height: 5rem;
+}
+
+@media only screen and (min-width: 500px) {
+	#HowToWin {
+		display: none;
 	}
 }
