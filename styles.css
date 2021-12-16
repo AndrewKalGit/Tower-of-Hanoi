@@ -67,7 +67,7 @@ button {
 #reset:hover {
 	color: lightskyblue;
 	background-color: aliceblue;
-	transition: .5s;
+	transition: 0.5s;
 }
 
 #HowToWin {
@@ -77,13 +77,13 @@ button {
 #HowToWin:hover {
 	color: greenyellow;
 	background: aliceblue;
-	transition: .5s;
+	transition: 0.5s;
 }
 
 button:hover {
 	background-color: aliceblue;
 	color: tomato;
-	transition: .5s;
+	transition: 0.5s;
 }
 
 .Border {
@@ -99,6 +99,11 @@ footer {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+#play {
+	color: aliceblue;
+	
+}
+
 @media only screen and (max-width: 500px) {
 	body {
 		width: 95%;
@@ -106,6 +111,9 @@ footer {
 	button {
 		font-size: 14px;
 		border-radius: 5px;
+	}
+	#play {
+		background-color: gold;
 	}
 }
 
@@ -115,6 +123,9 @@ footer {
 
 @media only screen and (min-width: 500px) {
 	#HowToWin {
+		display: none;
+	}
+	#play {
 		display: none;
 	}
 }
