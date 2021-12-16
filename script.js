@@ -1,7 +1,7 @@
 //When it doubt log it out!
 //Pseudo code and plan it out!
 //Comment to keep track of your progress
-//Git commit and push often when a goal reached! 
+//Git commit and push often when a goal reached!
 
 const BUTTON = document.querySelector('button');
 const P3 = document.querySelector('#p3');
@@ -48,7 +48,11 @@ window.addEventListener('load', (element) => {
 	}
 });
 
-//Create discs 
+window.onbeforeunload = function reset() {
+	return '';
+};
+
+//Create discs
 let funcCounter = 0;
 let winCounter;
 let mvpCounter = 3;
@@ -73,9 +77,12 @@ function createDisc() {
 		mvpCounter--;
 		INITIAL_ARRAY.push(funcCounter);
 	}
+	if (DISC_ARR[0].length < funcCounter) {
+		resetBoard();
+	}
 }
 
-//Moving Discs frmo their current position 
+//Moving Discs frmo their current position
 function moveDiscOrigin(pole, js) {
 	let jsARR = DISC_ARR[pole.id[1] - 1];
 	if (jsARR.length > 0) {
@@ -95,7 +102,7 @@ function moveDiscOrigin(pole, js) {
 	setTimeout(checkWin, 100);
 }
 
-//Check for win condition 
+//Check for win condition
 function checkWin() {
 	if (DISC_ARR[2].length === INITIAL_ARRAY.length) {
 		alert('Completed!');
@@ -112,6 +119,6 @@ function trackSteps() {}
 function trackTime() {}
 
 //Based off how many discs and how many steps and how much time
-function points() {} 
+function points() {}
 
-function solution() {} 
+function solution() {}

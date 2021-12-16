@@ -11,9 +11,9 @@
     <header>
         <h1><span class="Border">Tower of <span class="Hanoi"> Hanoi</span></span></h1>
     </header>
-    <button type="button">Add Discs</button>
+    <button type="button" id="add">Add Discs</button>
     <button type="button" id="reset">Reset Board</button>
-    <button id="HowToWin" type="button" onClick="document.getElementById('HowTo').scrollIntoView();">How to Play</button>
+    <button type="button" id="HowToWin" onClick="document.getElementById('HowTo').scrollIntoView();">How to Play</button>
 <div class="poles">
     <ul class="pole" id="p1">
     </ul>
@@ -31,9 +31,10 @@
     <h4 id="HowTo">How to play:</h4>
     <p>Tap the discs to select them, then tap the column you want to move it to.</p>
     <h4>Rules:</h4>
-    <p>1. You can't stack the bigger discs on smaller discs.</p>
-    <p>2. You can stack the smaller discs on bigger ones.</p>
-    <p>3. You can stack as many discs in any column given you are following the rules above</p>
+    <p>1. You can only add discs if the discs are at original position. The board will reset if you attempt to add discs, when not at origin!</p>
+    <p>2. You can't stack the bigger discs on smaller discs.</p>
+    <p>3. You can stack the smaller discs on bigger ones.</p>
+    <p>4. You can stack as many discs in any column given you are following the rules above</p>
 </footer>
 </body>
 </html>
