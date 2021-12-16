@@ -51,7 +51,7 @@ window.addEventListener('load', (element) => {
 //Create discs 
 let funcCounter = 0;
 let winCounter;
-let mvpCounter = 2;
+let mvpCounter = 3;
 function createDisc() {
 	if (funcCounter < 5) {
 		const disc = document.createElement('li');
