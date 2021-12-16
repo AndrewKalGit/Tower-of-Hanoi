@@ -103,6 +103,10 @@ footer {
 	body {
 		width: 95%;
 	}
+	button {
+		font-size: 14px;
+		border-radius: 5px;
+	}
 }
 
 #win {

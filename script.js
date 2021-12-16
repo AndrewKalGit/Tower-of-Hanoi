@@ -1,3 +1,8 @@
+//When it doubt log it out!
+//Pseudo code and plan it out!
+//Comment to keep track of your progress
+//Git commit and push often when a goal reached! 
+
 const BUTTON = document.querySelector('button');
 const P3 = document.querySelector('#p3');
 const P2 = document.querySelector('#p2');
@@ -5,11 +10,9 @@ const P1 = document.querySelector('#p1');
 const Poles = document.querySelector('.poles');
 const RESET = document.querySelector('#reset');
 
+const INITIAL_ARRAY = [];
+
 const DISC_ARR = [[], [], []];
-
-const WIN_CONDITION = [[], [], []];
-
-const emptyArray = [];
 
 let selectDisc = null;
 let selectedPole;
@@ -18,6 +21,8 @@ let js;
 RESET.addEventListener('click', resetBoard);
 
 BUTTON.addEventListener('click', createDisc);
+
+//Game Logic
 Poles.addEventListener('click', function (event) {
 	if (event.target.parentElement.classList.contains('pole')) {
 		selectedPole = event.target.parentElement;
@@ -43,6 +48,7 @@ window.addEventListener('load', (element) => {
 	}
 });
 
+//Create discs 
 let funcCounter = 0;
 let winCounter;
 let mvpCounter = 2;
@@ -61,14 +67,15 @@ function createDisc() {
 		disc.style.backgroundColor = `rgb(${COLOR1},${COLOR2},${COLOR3})`;
 		disc.style.borderRadius = `${5}px`;
 		DISC_ARR[0].push(disc);
-		WIN_CONDITION[0].push(disc);
 		P1.append(disc);
 		winCounter++;
 		funcCounter++;
 		mvpCounter--;
+		INITIAL_ARRAY.push(funcCounter);
 	}
 }
 
+//Moving Discs frmo their current position 
 function moveDiscOrigin(pole, js) {
 	let jsARR = DISC_ARR[pole.id[1] - 1];
 	if (jsARR.length > 0) {
@@ -84,11 +91,13 @@ function moveDiscOrigin(pole, js) {
 		selectDisc = null;
 		DISC_ARR[selectedPole.id[1] - 1].push(js);
 	}
+	console.log(DISC_ARR);
 	setTimeout(checkWin, 100);
 }
 
+//Check for win condition 
 function checkWin() {
-	if (DISC_ARR[2].length === 3) {
+	if (DISC_ARR[2].length === INITIAL_ARRAY.length) {
 		alert('Completed!');
 		resetBoard();
 	}
@@ -97,3 +106,12 @@ function checkWin() {
 function resetBoard() {
 	window.location = window.location;
 }
+
+function trackSteps() {}
+
+function trackTime() {}
+
+//Based off how many discs and how many steps and how much time
+function points() {} 
+
+function solution() {} 
