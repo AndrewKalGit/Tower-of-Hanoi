@@ -10,7 +10,7 @@
 
 ### Installation Instructions
 
-- For and clone the repository
+- Fork and clone the repository
 - cd to the name of the repo: Tower-of-Hanoi
 - Open in your preferred text editor
 - Open index.html in your browser
