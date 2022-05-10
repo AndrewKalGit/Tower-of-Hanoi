@@ -82,7 +82,7 @@ function createDisc() {
 	}
 }
 
-//Moving Discs frmo their current position
+//Moving Discs from their current position
 function moveDiscOrigin(pole, js) {
 	let jsARR = DISC_ARR[pole.id[1] - 1];
 	if (jsARR.length > 0) {
